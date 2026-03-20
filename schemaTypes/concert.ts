@@ -9,6 +9,7 @@ export const concertType = defineType({
       name: 'date',
       title: 'Datum',
       type: 'date',
+      description: 'Datum im Format JJJJ-MM-TT (z. B. 2026-12-31)',
       validation: (Rule) => Rule.required(),
     }),
     defineField({

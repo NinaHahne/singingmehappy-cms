@@ -127,14 +127,16 @@ export const concertType = defineType({
       date: 'date',
       location: 'location',
       timeLabel: 'timeLabel',
+      flyerImage: 'flyerImage',
     },
-    prepare({title, date, location, timeLabel}) {
+    prepare({title, date, location, timeLabel, flyerImage}) {
       const firstLocationLine = location?.split('\n')?.[0]
       const subtitleParts = [date, timeLabel, firstLocationLine].filter(Boolean)
 
       return {
         title: title || 'Konzert ohne Titel',
         subtitle: subtitleParts.join(' · '),
+        media: flyerImage || '♫',
       }
     },
   },

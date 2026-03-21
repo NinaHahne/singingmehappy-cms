@@ -1,3 +1,4 @@
+import {choirMemberType} from './choirMember'
 import {concertType} from './concert'
 
-export const schemaTypes = [concertType]
+export const schemaTypes = [choirMemberType, concertType]

@@ -10,7 +10,7 @@ const VOICE_OPTIONS = [
 
 export const choirMemberType = defineType({
   name: 'choirMember',
-  title: 'Chormitglied',
+  title: 'Chormitglied 😄',
   type: 'document',
   fields: [
     defineField({
@@ -20,19 +20,6 @@ export const choirMemberType = defineType({
       description: 'Der Name des Mitglieds (z. B. "Brit").',
       validation: (Rule) => Rule.required(),
     }),
-    // defineField({
-    //   name: 'slug',
-    //   title: 'Interne ID (automatisch)',
-    //   type: 'slug',
-    //   //   hidden: true,
-    //   description:
-    //     'Wird bei Klick auf "Generate" automatisch aus dem Namen erzeugt und dient nur intern für die Website. Bitte einfach so lassen.',
-    //   options: {
-    //     source: 'name',
-    //     maxLength: 96,
-    //   },
-    //   validation: (Rule) => Rule.required(),
-    // }),
     defineField({
       name: 'voiceType',
       title: 'Stimmgruppe',
@@ -104,7 +91,7 @@ export const choirMemberType = defineType({
       return {
         title,
         subtitle: ` ${voiceType?.toUpperCase()} · ${sortOrder}`,
-        media: media || '👤',
+        media: media || '😄',
       }
     },
   },

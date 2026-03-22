@@ -2,7 +2,7 @@ import {defineArrayMember, defineField, defineType} from 'sanity'
 
 export const concertType = defineType({
   name: 'concert',
-  title: 'Konzert',
+  title: 'Konzert ♫',
   type: 'document',
   fields: [
     defineField({

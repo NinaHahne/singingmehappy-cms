@@ -60,7 +60,8 @@ export const concertType = defineType({
       title: 'Ort / Adresse',
       type: 'text',
       rows: 4,
-      description: 'Mehrzeiliges Feld für Veranstaltungsort und Adresse.',
+      description:
+        'Mehrzeiliges Feld für Veranstaltungsort und Adresse. Textumbrüche werden berücksichtigt.',
     }),
     defineField({
       name: 'mapsUrl',

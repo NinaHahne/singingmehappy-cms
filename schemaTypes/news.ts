@@ -6,6 +6,15 @@ export const newsType = defineType({
   type: 'document',
   fields: [
     defineField({
+      name: 'intro',
+      title: 'Kleiner Text links',
+      type: 'text',
+      rows: 4,
+      description:
+        'Optionaler kurzer Text unter der Überschrift „Aktuelles“ - maximal 80 Zeichen - Textumbrüche werden berücksichtigt',
+      validation: (Rule) => Rule.max(80),
+    }),
+    defineField({
       name: 'content',
       title: 'Inhalt',
       type: 'array',

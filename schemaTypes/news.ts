@@ -18,7 +18,8 @@ export const newsType = defineType({
       name: 'content',
       title: 'Inhalt',
       type: 'array',
-      description: 'Freitext mit optionalen Links',
+      description:
+        'Freitext mit optionalen Links. Für ein "geschütztes Leerzeichen" bitte ~ verwenden.',
       of: [
         defineArrayMember({
           type: 'block',

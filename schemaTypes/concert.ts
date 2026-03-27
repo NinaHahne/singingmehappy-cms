@@ -28,7 +28,8 @@ export const concertType = defineType({
       name: 'description',
       title: 'Beschreibung',
       type: 'array',
-      description: 'Freitext mit optionalen Links (z. B. Infos zum Programm)',
+      description:
+        'Freitext mit optionalen Links (z. B. Infos zum Programm). Für ein "geschütztes Leerzeichen" bitte ~ verwenden.',
       of: [
         defineArrayMember({
           type: 'block',
